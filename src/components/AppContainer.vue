@@ -76,8 +76,10 @@ main {
                 flex-flow: row wrap;
                 justify-content: space-between;
 
+                row-gap: 1em;
+
                 margin: 0 auto;
-                padding: 30px 25px;
+                padding-bottom: 30px;
                 width: 84vw;
 
                 list-style: none;
