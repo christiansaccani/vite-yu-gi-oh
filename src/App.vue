@@ -4,6 +4,8 @@ import axios from 'axios';
 
 import {store} from './store.js';
 
+import AppHeader from './components/AppHeader.vue';
+
 export default {
   data() {
     return {
@@ -11,6 +13,10 @@ export default {
 
       store,
     }
+  },
+
+  components: {
+    AppHeader,
   },
 
   created() {
@@ -27,10 +33,6 @@ export default {
 
   },
 
-  components: {
-    
-  },
-
   methods: {
 
 
@@ -40,7 +42,9 @@ export default {
 <!-- ---------------------------------------------------------------------------------- -->
 <template>
 
-
+  <div>
+    <AppHeader></AppHeader>
+  </div>
 
 </template>
 <!-- ---------------------------------------------------------------------------------- -->
