@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <li class="card">
+    <li class="my_card">
         <img :src="card.card_images[0].image_url" :alt="card.name">
         <p class="card-name">{{ card.name }}</p>
         <p class="card-race">{{ card.race }}</p>
@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss">
 
-.card {
+.my_card {
     display: flex;
     flex-direction: column;
     align-items: center;

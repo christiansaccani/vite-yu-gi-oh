@@ -3,6 +3,8 @@
 import AppCardItem from './AppCardItem.vue';
 import {store} from '../store.js';
 
+
+
 export default {
 
     name: 'AppContainer',
@@ -11,6 +13,8 @@ export default {
         return {
         cards: [],
         store,
+
+        foundCards: store.cards.data,
         }
     },
 
@@ -29,7 +33,8 @@ export default {
 <main>
     <div id="container">
         <div id="black-line">
-            Found N cards
+            {{ (store.cards.data || []).length >= 20 ? 'Found ' + (store.cards.data || []).length + ' cards' : 'Loading...' }}
+            
         </div>
         <section id="cards-section">
             <ul>

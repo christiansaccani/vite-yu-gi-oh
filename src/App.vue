@@ -26,7 +26,7 @@ export default {
     
     // da qui riempio il mio array con i dati delle carte
     axios
-      .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=234')
+      .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=45&offset=234')
       .then(res => {
         console.log(res.data)
         this.store.cards = res.data
