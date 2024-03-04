@@ -23,16 +23,18 @@ export default {
 
 <style lang="scss">
 
-div {
-    display: flex;
-    align-items: center;
-    gap: 1em;
+header {
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1em;
 
-    padding: .5em;
-    background-color: white;
+        padding: .5em;
+        background-color: white;
 
-    img {
-        max-height: 50px;
+        img {
+            max-height: 50px;
+        }
     }
 }
 

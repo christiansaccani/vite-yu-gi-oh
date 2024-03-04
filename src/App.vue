@@ -5,6 +5,7 @@ import axios from 'axios';
 import {store} from './store.js';
 
 import AppHeader from './components/AppHeader.vue';
+import AppContainer from './components/AppContainer.vue';
 
 export default {
   data() {
@@ -17,6 +18,7 @@ export default {
 
   components: {
     AppHeader,
+    AppContainer,
   },
 
   created() {
@@ -42,14 +44,17 @@ export default {
 <!-- ---------------------------------------------------------------------------------- -->
 <template>
 
-  <div>
+  <body>
     <AppHeader></AppHeader>
-  </div>
+    <AppContainer></AppContainer>
+  </body>
 
 </template>
 <!-- ---------------------------------------------------------------------------------- -->
 <style lang="scss">
 
-
+body {
+  background-color: #d48f38;
+}
 
 </style>
