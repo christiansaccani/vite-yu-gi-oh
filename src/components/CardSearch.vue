@@ -1,6 +1,9 @@
 <script>
 
 export default {
+
+    name: 'CardSearch',
+
     data() {
         return {
             searchText: ''
