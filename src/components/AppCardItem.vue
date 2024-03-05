@@ -26,10 +26,11 @@ export default {
     gap: 1em;
     padding-bottom: .5em;
 
+    width: calc(100% / 5 - 40px / 5 * 4);
     background-color: #d48f38;
 
     img {
-        width: 15vw;
+        width: 100%;
     }
 
     .card-name {

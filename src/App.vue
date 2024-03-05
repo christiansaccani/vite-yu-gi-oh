@@ -7,6 +7,7 @@ import {store} from './store.js';
 import AppHeader from './components/AppHeader.vue';
 import AppContainer from './components/AppContainer.vue';
 
+
 export default {
   data() {
     return {
@@ -26,7 +27,7 @@ export default {
     
     // da qui riempio il mio array con i dati delle carte
     axios
-      .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=45&offset=234')
+      .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
       .then(res => {
         console.log(res.data)
         this.store.cards = res.data
