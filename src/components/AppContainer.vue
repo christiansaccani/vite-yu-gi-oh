@@ -89,6 +89,7 @@ main {
         padding-top: 60px;
 
         width: 90vw;
+        border-radius: 12px;
 
         background-color: whitesmoke;
 
@@ -102,6 +103,9 @@ main {
             margin: 0 auto;
             padding: 30px 25px;
             width: 84vw;
+
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
 
             background-color: #212529;
             color: whitesmoke;
@@ -118,7 +122,7 @@ main {
                 gap: 40px;
                 row-gap: 1em;
 
-                margin: 0 auto;
+                margin: .5em auto;
                 padding-bottom: 30px;
                 width: 84vw;
 
